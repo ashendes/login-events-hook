@@ -1,0 +1,9 @@
+[build-options]
+  observabilityIncluded = true
+
+[package]
+  distribution = "2201.3.1"
+  name = "asgardeo_login_events"
+  org = "authme"
+  version = "0.1.0"
+
