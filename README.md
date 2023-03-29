@@ -1,1 +1,1 @@
-# login-events-hook
+# login-events-hook used to test login events.
