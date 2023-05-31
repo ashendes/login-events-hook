@@ -12,6 +12,14 @@ service asgardeo:LoginService on webhookListener {
     remote function onLoginSuccess(asgardeo:LoginSuccessEvent event ) returns error? {
       log:printInfo(event.toJsonString());
     }
+    
+    remote function onUserAdd(asgardeo:AddUserEvent event ) returns error? {
+      log:printInfo(event.toJsonString());
+    }
+    
+    remote function onUserDelete(asgardeo:DeleteUserEvent event ) returns error? {
+      log:printInfo(event.toJsonString());
+    }
 }
 
 service /ignore on httpListener {}
